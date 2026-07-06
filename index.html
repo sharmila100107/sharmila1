@@ -1,32 +1,173 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My Form</title>
+    <title>College Student Registration Form</title>
 </head>
 
-<body>
+<body bgcolor="lightcyan">
 
-    <h2>Student Form</h2>
+<center>
 
-    <form>
+<h1>ABC COLLEGE OF ARTS & SCIENCE</h1>
+<h2>Student Registration Form</h2>
+<hr width="70%">
 
-        Name:
-        <input type="text"><br><br>
+<form action="result.html">
 
-        Email:
-        <input type="email"><br><br>
+<table border="1" cellpadding="8" cellspacing="0">
 
-        Password:
-        <input type="password"><br><br>
+<tr>
+<td>Full Name</td>
+<td><input type="text" name="name" size="30" placeholder="Enter Full Name" required></td>
+</tr>
 
-        Gender:
-        <input type="radio" name="g"> Male
-        <input type="radio" name="g"> Female
-        <br><br>
+<tr>
+<td>Father's Name</td>
+<td><input type="text" name="father" size="30"></td>
+</tr>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+<tr>
+<td>Mother's Name</td>
+<td><input type="text" name="mother" size="30"></td>
+</tr>
 
-    </form>
+<tr>
+<td>Email</td>
+<td><input type="email" name="email" placeholder="abc@gmail.com" required></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" name="password" minlength="6"></td>
+</tr>
+
+<tr>
+<td>Phone Number</td>
+<td><input type="tel" maxlength="10"></td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td><input type="number" min="17" max="35"></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</td>
+</tr>
+
+<tr>
+<td>Blood Group</td>
+<td>
+<select>
+<option>Select</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Department</td>
+<td>
+<select>
+<option>Select Department</option>
+<option>B.Sc Nursing</option>
+<option>B.Sc Computer Science</option>
+<option>BCA</option>
+<option>B.Com</option>
+<option>BA English</option>
+<option>Mechanical</option>
+<option>Civil</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Year of Study</td>
+<td>
+<select>
+<option>I Year</option>
+<option>II Year</option>
+<option>III Year</option>
+<option>IV Year</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Languages Known</td>
+<td>
+<input type="checkbox"> Tamil
+<input type="checkbox"> English
+<input type="checkbox"> Hindi
+<input type="checkbox"> Malayalam
+</td>
+</tr>
+
+<tr>
+<td>Favourite Colour</td>
+<td><input type="color"></td>
+</tr>
+
+<tr>
+<td>Course Timing</td>
+<td><input type="time"></td>
+</tr>
+
+<tr>
+<td>Website</td>
+<td><input type="url" placeholder="https://"></td>
+</tr>
+
+<tr>
+<td>Upload Photo</td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td>
+<textarea rows="5" cols="35" placeholder="Enter Address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>Comments</td>
+<td>
+<textarea rows="3" cols="35"></textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<button type="button">Cancel</button>
+<button type="button">Print</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</center>
 
 </body>
 </html>
